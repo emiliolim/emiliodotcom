@@ -1,11 +1,11 @@
 body{
-	width: 50%;
+	width: 90%; /* Scales for smaller screens */
+	max-width: 800px; /* Limit the maximum width for larger screens */
 	height: 100vh;
-	margin: 0;
+	margin: 0 auto; /* Center the content */
 	font-family: Tahoma;
 	font-size: 16px;
 	padding-top: 5%;
-	padding-left: 5%
 }
 
 a {
@@ -55,4 +55,32 @@ a {
 	font-size: 1.25rem;
 	color: #555;
 	margin: 0; /* Remove default margins */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+	#title-container {
+		flex-direction: column; /* Stack the image and text vertically */
+		text-align: center; /* Center the text for smaller screens */
+	}
+
+	#title-container img {
+		margin-bottom: 15px; /* Add space between the image and text */
+	}
+
+	#text-container {
+		text-align: center; /* Center the text for better alignment */
+	}
+
+	#title {
+		font-size: 2rem; /* Adjust the title size for smaller screens */
+	}
+
+	#about {
+		font-size: 0.9rem; /* Adjust the font size for smaller screens */
+	}
+
+	#description {
+		font-size: 0.9rem; /* Adjust the font size for smaller screens */
+	}
 }
