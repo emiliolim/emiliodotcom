@@ -1,11 +1,11 @@
 body{
 	width: 90%; /* Scales for smaller screens */
 	max-width: 750px; /* Limit the maximum width for larger screens */
-	height: 100vh;
 	margin: 0 auto; /* Center the content */
 	font-family: Tahoma;
 	font-size: 16px;
 	padding-top: 5%;
+	min-height: 75vh;
 }
 
 a {
@@ -49,7 +49,7 @@ a {
 	border-radius: 50%; /* Makes the image circular */
 }
 
-#research, #contact{
+#research, #contact, #projects{
 	font-size: 1.5rem;
 	margin: 0;
 }
@@ -58,6 +58,10 @@ a {
 	font-size: 1.25rem;
 	color: #555;
 	margin: 0; /* Remove default margins */
+}
+
+#project-theme{
+	color: #555;
 }
 
 /* Responsive Styles */
