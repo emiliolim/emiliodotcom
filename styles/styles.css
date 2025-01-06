@@ -1,6 +1,6 @@
 body{
 	width: 90%; /* Scales for smaller screens */
-	max-width: 800px; /* Limit the maximum width for larger screens */
+	max-width: 750px; /* Limit the maximum width for larger screens */
 	height: 100vh;
 	margin: 0 auto; /* Center the content */
 	font-family: Tahoma;
@@ -12,6 +12,9 @@ a {
 	text-decoration: none; /* Removes underlined text */
   }
 
+.new-line {
+    display: block; /* Forces the text to appear on a new line */
+}
 
 #title-container {
 	display: flex;
@@ -58,7 +61,7 @@ a {
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
 	#title-container {
 		flex-direction: column; /* Stack the image and text vertically */
 		text-align: center; /* Center the text for smaller screens */
