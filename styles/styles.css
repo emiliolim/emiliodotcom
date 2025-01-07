@@ -50,6 +50,7 @@ a {
 	border-radius: 50%; /* Makes the image circular */
 }
 
+/* Research section */
 #research, #contact, #projects{
 	font-size: 1.5rem; /* Font size for section headers headers */
 	margin: 0;
@@ -61,8 +62,23 @@ a {
 	margin: 0; /* Remove default margins */
 }
 
-#project-theme{
-	color: #555; 
+/* Projects section */
+.project-description{
+	max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.project-description.active {
+    max-height: 500px; /* Adjust this value based on content size*/
+}
+
+.toggle-icon {
+    transition: transform 0.3s ease-out; /* For slide down information box */
+}
+
+.toggle-icon.active {
+    transform: rotate(180deg); /* rotate interactive arrow for better readability */
 }
 
 /* Responsive Styles for smaller displays */

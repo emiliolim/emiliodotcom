@@ -35,17 +35,18 @@
 
 	<!-- Projects section -->
 	<h3 id="projects">Projects</h3>
-	<p id="description">
-	<dl id="project-list">
-		<dt id="project">
-			Database Manager
-			<!-- Drop down info boxes (reduces clutter) -->
-			 <!-- TODO: make separate projects page? -->
-			<button onclick="toggleDescription('desc')">▼</button>
-		</dt>
-		<dd id="desc" style="display: none;">description</dd>
-	</dl>
-	</p>
+	<div id="project-list">
+		<div class="project">
+			<div class="project-header" onclick="toggleDescription('project-desc')">
+				Database Manager
+				<span class="toggle-icon">▼</span>
+			</div>
+			<div id="project-desc" class="project-description">
+				<p>Your project description goes here.</p>
+			</div>
+		</div>
+	</div>
+	
 	<!-- Contact me section -->
 	 <!-- TODO: Add icons and boxes for each contact section -->
 	<h4 id="contact">Contacts</h4>
