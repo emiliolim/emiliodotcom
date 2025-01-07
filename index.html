@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8"/>
-	<title> Emilio.com Website </title>
+	<title> emilio dot com </title>
 	<link rel="stylesheet" href="styles/styles.css"/>
 	<script src="index.js"></script>
-	<link rel="icon" type="image/x-icon" href="chicken_favicon.png">
+
+	<!-- browser icon is a chicken because i like chickens -->
+	<link rel="icon" type="image/x-icon" href="chicken_favicon.png" alt="chicken icon">
 </head>
 
 <body>
+	<!-- Top heading describing who I am -->
 	<div id="title-container">
 		<img src="emiliolimpfp.png" alt="Emilio Lim Profile Picture" width="115" height="115">
 		<div id="text-container">
@@ -18,6 +21,7 @@
 			</p>
 		</div>
 	</div>
+	<!-- Research about section -->
 	<h2 id="research">About my research!</h2>
 	<p id="research-theme">Predicting Cell Splits Using PCA</p>
 	<p id="description">
@@ -28,21 +32,28 @@
 		the efficacy of principle component analysis (PCA) when it comes to predicting
 		when bacteria will split into two, a component within the greater goal of automatic
 		cell tracking.
-<h3 id="projects">Projects</h3>
-<p id="description">
-<dl id="project-list">
-    <dt id="project">
-        Database Manager
-        <button onclick="toggleDescription('desc')">▼</button>
-    </dt>
-    <dd id="desc" style="display: none;">description</dd>
-</dl>
-</p>
+
+	<!-- Projects section -->
+	<h3 id="projects">Projects</h3>
+	<p id="description">
+	<dl id="project-list">
+		<dt id="project">
+			Database Manager
+			<!-- Drop down info boxes (reduces clutter) -->
+			 <!-- TODO: make separate projects page? -->
+			<button onclick="toggleDescription('desc')">▼</button>
+		</dt>
+		<dd id="desc" style="display: none;">description</dd>
+	</dl>
+	</p>
+	<!-- Contact me section -->
+	 <!-- TODO: Add icons and boxes for each contact section -->
 	<h4 id="contact">Contacts</h4>
 	<p id="description">
 		linkedin: <a href="https://linkedin.com/in/emilio-lim-2ba9b3251">emiliolim</a> |
 		gmail: <a href="mailto:emilioarislim@gmail.com">emilioarislim@gmail.com</a> |
-		instagram: <a href="https://www.instagram.com/emilio_lim/">@emilio_lim</a>
+		instagram: <a href="https://www.instagram.com/emilio_lim/">@emilio_lim</a> 
+		<span class="new-line">github: <a href="https://github/emiliolim">emiliolim</a></span>
 	</p>
 
 </body>

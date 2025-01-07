@@ -9,7 +9,7 @@ body{
 }
 
 a {
-	text-decoration: none; /* Removes underlined text */
+	text-decoration: none; /* Removes underlined text  for links */
   }
 
 .new-line {
@@ -39,6 +39,7 @@ a {
 	margin: 0; /* Remove default margins */
 }
 
+/* Description for about section */
 #description {
 	font-size: 1rem;
 	color: #555;
@@ -50,7 +51,7 @@ a {
 }
 
 #research, #contact, #projects{
-	font-size: 1.5rem;
+	font-size: 1.5rem; /* Font size for section headers headers */
 	margin: 0;
 }
 
@@ -61,10 +62,10 @@ a {
 }
 
 #project-theme{
-	color: #555;
+	color: #555; 
 }
 
-/* Responsive Styles */
+/* Responsive Styles for smaller displays */
 @media screen and (max-width: 500px) {
 	#title-container {
 		flex-direction: column; /* Stack the image and text vertically */
