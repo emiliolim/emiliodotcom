@@ -1,10 +1,20 @@
-// Toggles descriptions for each drop down box in the project section
-function toggleDescription(id) {
-    // get project id
-    var desc = document.getElementById(id);
-    // Select arrow icon so that it can be rotated when clicked
-    var icon = desc.previousElementSibling.querySelector('.toggle-icon');
-    
-    desc.classList.toggle('active');
-    icon.classList.toggle('active');
+// Modal boxes functions to control descriptions
+function openModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "block";
+}
+
+function closeModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "none";
+}
+
+// if user clicks out of the box then exit modal box
+window.onclick = function(event) {
+    var modals = document.getElementsByClassName("modal");
+    for (var i = 0; i < modals.length; i++) {
+        if (event.target == modals[i]) {
+            modals[i].style.display = "none";
+        }
+    }
 }
