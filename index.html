@@ -9,6 +9,7 @@
 		
 		<!-- my custom CSS -->
 		<link rel="stylesheet" href="styles/styles.css"/>
+		<link rel="stylesheet" href="styles/navbar.css"/>
 		
 		<!-- bootstrap JavaScript Bundle -->
 		<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
@@ -20,6 +21,21 @@
 		<link rel="icon" type="image/x-icon" href="chicken-favicon.png" alt="chicken icon">
 	</head>
 
+<div class="nav-toggle">
+	<button class="openbtn" onclick="openNav('side-nav')" aria-label="Open navigation bar">&#9776;</button>
+</div>
+
+<!-- Navigation Bar -->
+<div class="side-nav" id="side-nav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav('side-nav')">&times;</a>
+	<a href="#title-container">About</a>
+	<!-- for now it looks better visually if projects goes to top of page -->
+	<a href="#title-container">Projects</a>
+	<a href="#research">Research</a>
+	<a href="#contact">Contact</a>
+</div>
+
+<!-- Main body index -->
 <body>
 	<!-- Top heading describing who I am -->
 	<div id="title-container">

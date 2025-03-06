@@ -18,3 +18,13 @@ window.onclick = function(event) {
         }
     }
 }
+
+// Navbar toggling functions
+function openNav(navId) {
+    document.getElementById(navId).style.width = "10%";
+}
+
+function closeNav(navId) {
+    var nav = document.getElementById(navId);
+    nav.style.width = "0%";
+}
